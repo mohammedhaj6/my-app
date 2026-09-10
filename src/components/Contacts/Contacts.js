@@ -4,10 +4,7 @@ import "./Contacts.css";
 const Contacts = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [contacts, setContact] = useState([
-    { id: "1", name: "ahmed", phone: "772527" },
-    { id: "2", name: "mohammed", phone: "727275" },
-  ]);
+  const [contacts, setContact] = useState([]);
 
   const handleAddContacts = () => {
     const addNewContact = {
