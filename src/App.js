@@ -1,9 +1,11 @@
-import Contacts from "./components/Contacts/Contacts";
+import UserCard from "./components/User/UserCard";
 
 function App() {
   return (
     <>
-      <Contacts />
+      <UserCard name="mohammed" role="admin" isOnline={true} unReadCount={3} />
+      <UserCard name="mostfa" role="guest" isOnline={false} unReadCount={0} />
+      <UserCard name="ali" role="admin" isOnline={true} unReadCount={1} />
     </>
   );
 }
